@@ -1,4 +1,3 @@
-
 # Travelling Bookings Webpage 🌍✈️
 
 A dynamic, responsive web application for browsing and booking travel packages, accommodations, flights, and more—built with modern web technologies.
@@ -24,8 +23,8 @@ It’s intended as a full-stack travel booking platform with a clean front-end a
 | ---------- | ----------------------------------------------------------- |
 | Front-End  | HTML, CSS, JavaScript (+ frameworks like React/Vue if used) |
 | Back-End   | Node.js / Django / Flask (specify if applicable)            |
-| Database   | PostgreSQL / MySQL / MongoDB                                |
-| API        | RESTful or GraphQL                                          |
+| Database   | JSON / LocalStorage (for development/demo purposes)         |
+| API        | Not used                                                    |
 | Deployment | Netlify / Heroku / Vercel / Railway                         |
 
 ---
@@ -36,9 +35,9 @@ It’s intended as a full-stack travel booking platform with a clean front-end a
 Travelling_bookings_webpage/
 ├── client/        # Front-end source (HTML, CSS, JS or framework)
 ├── server/        # Back-end server code and API logic
-├── db/            # Database models and migration scripts
+├── db/            # Simulated data or JSON storage
 ├── public/        # Static assets (images, icons, CSS)
-├── .env           # Environment variables (API keys, DB credentials)
+├── .env           # Environment variables (if applicable)
 ├── README.md      # Project overview and setup instructions
 └── package.json / requirements.txt
 ```
@@ -73,7 +72,6 @@ Travelling_bookings_webpage/
 ### Prerequisites
 
 * Node.js (v16+) or Python (v3.10+)
-* PostgreSQL / MySQL / MongoDB (based on db choice)
 
 ### Quick Start
 
@@ -89,8 +87,6 @@ Travelling_bookings_webpage/
    ```bash
    cd server
    npm install           # or pip install -r requirements.txt
-   cp .env.example .env  # update DB and API keys
-   npm run migrate       # or flask/db migration commands
    npm start             # or flask run / gunicorn
    ```
 
@@ -103,7 +99,7 @@ Travelling_bookings_webpage/
    ```
 
 4. **Visit**
-   Navigate to `http://localhost:3000` for the frontend and `http://localhost:5000` (or 8000) for the API.
+   Navigate to `http://localhost:3000` for the frontend.
 
 ---
 
@@ -123,7 +119,7 @@ cd server && npm test
 
 ## 📆 Deployment
 
-1. Set your environment variables (API keys, DB URL) on your host.
+1. Set your environment variables (if needed) on your host.
 2. Deploy the back-end (Heroku/Railway/VPS).
 3. Deploy the front-end (Netlify/Vercel with build output).
 4. Configure domain, SSL, and CI/CD as needed.
