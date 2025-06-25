@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyHigh Flight Booker</title>
+    <link rel="stylesheet" href="flight.css">
+</head>
+<body>
+    <header>
+        <h1>SkyHigh Flight Booker</h1>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <h2>Search Flights</h2>
+            <form id="search-form">
+                <div>
+                    <label for="origin">Origin:</label>
+                    <input type="text" id="origin" name="origin" placeholder="e.g., New York" required>
+                </div>
+                <div>
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" placeholder="e.g., London" required>
+                </div>
+                <div>
+                    <label for="departure-date">Departure Date:</label>
+                    <input type="date" id="departure-date" name="departure-date" required>
+                </div>
+                <button type="submit" id="search-btn">Search Flights</button>
+            </form>
+            <div id="search-loader" class="loader" style="display:none;">Searching...</div>
+        </section>
+
+        <section id="results-section">
+            <h2>Available Flights</h2>
+            <div id="flight-results" class="flight-list">
+                <p>Enter search criteria above to find flights.</p>
+            </div>
+        </section>
+
+        <section id="booking-details-section" style="display:none;">
+            <h2>Booking Details</h2>
+            <div id="selected-flight-info"></div>
+            <div>
+                <label for="num-passengers">Number of Passengers:</label>
+                <input type="number" id="num-passengers" min="1" value="1">
+            </div>
+            <button id="confirm-booking-btn">Confirm Booking</button>
+            <button id="cancel-booking-btn">Cancel</button>
+            <div id="booking-loader" class="loader" style="display:none;">Processing Booking...</div>
+        </section>
+
+        <section id="confirmation-section" style="display:none;">
+            <h2>Booking Status</h2>
+            <div id="booking-confirmation-message">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 SkyHigh Flight Booker</p>
+    </footer>
+
+    <script src="flight.js"></script>
+</body>
+</html>

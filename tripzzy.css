@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #ffffff;
+     background-size: cover;
+      background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+}
+.back-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.top-bar {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #3FA7D6;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.logo-area #brand-logo {
+    height: 50px; 
+    vertical-align: middle;
+    width: 150px;
+}
+.search-area .search-form {
+    display: flex; 
+    align-items: center;
+}
+
+.search-area #search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border:rgb(255, 255, 255);
+    border-radius: 30px;
+    outline:rgb(255, 255, 255);
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    color: #141313;
+}
+
+.search-area #search-button {
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ffffff;
+    border-left: none; 
+    border-radius: 30px; 
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-area #search-button:hover {
+    background-color:  #F4EAD5;
+}
+.navigation-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.navigation-links li {
+    margin: 0 10px; 
+}
+
+.navigation-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.navigation-links a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+.user-auth {
+    display: flex;
+    align-items: center;
+}
+
+.user-auth .auth-link {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 8px;
+}
+.user-auth span {
+    margin: 0 5px;
+    font-size: 14px;
+    color: #777;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+.popup-overlay {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Content Box Styles */
+.popup-content {
+    background-color: #fff;
+    margin: auto; /* For older browsers, along with flex centering */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 450px; /* Max width of the popup */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative; /* For positioning the close button */
+    text-align: center;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.popup-content p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Close Button */
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+    font-size: 14px;
+}
+
+.mobile-input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.country-code {
+    padding: 10px 12px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+}
+
+.popup-content input[type="tel"] {
+    width: 100%; /* Take remaining width */
+    padding: 10px 12px;
+    border: none; /* Border is on the group */
+    border-radius: 0 4px 4px 0; /* Match group rounding */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.popup-content input[type="tel"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Focus indicator */
+}
+
+/* Submit Button */
+.popup-submit-button {
+    background-color:  #3FA7D6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.popup-submit-button:hover {
+    background-color: #0056b3;
+}
+
+.popup-terms {
+    font-size: 12px;
+    color: #777;
+    margin-top: 25px;
+}
+.popup-terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+.popup-terms a:hover {
+    text-decoration: underline;
+}

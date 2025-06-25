@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripzzy</title>
+    <link rel="stylesheet" href="tripzzy.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo-area">
+            <a href="index.html">
+                <img src="tripzzy.png" alt="Brand Logo" id="brand-logo">
+            </a>
+        </div>
+
+        <div class="search-area">
+            <form action="/search" method="get" class="search-form">
+                <input type="search" name="query" id="search-input" placeholder="Search destinations, hotels...">
+                <button type="submit" id="search-button">Search</button>
+            </form>
+        </div>
+
+        <nav class="navigation-links">
+            <ul>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Bus</a></li>
+                <li><a href="#">Trains</a></li>
+                <li><a href="#">Cabs</a></li>
+                <li><a href="#">Places</a></li>
+            </ul>
+        </nav>
+
+        <div class="user-auth">
+            <a href="#" class="auth-link" id="login-trigger">Login</a>
+            <span>or</span>
+            <a href="#" class="auth-link">Sign Up</a>
+        </div>
+    </header>
+    <video id="background video" autoplay muted loop class="back-video">
+    <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <main>
+        <h1>Welcome to Tripzzy!</h1>
+        <p>Find the best deals for your next adventure.</p>
+    </main>
+    <div id="login-popup-overlay" class="popup-overlay">
+        <div class="popup-content">
+            <button class="close-button" id="close-popup-button"></button>
+            <h2>Login / Sign Up</h2>
+            <p>Please enter your mobile number to continue.</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="mobile-number">Mobile Number:</label>
+                    <div class="mobile-input-group">
+                        <span class="country-code">+91</span>
+                        <input type="tel" id="mobile-number" name="mobile-number" placeholder="Enter your 10-digit mobile number" required pattern="[0-9]{10}">
+                    </div>
+                </div>
+                <button type="submit" class="popup-submit-button">Send OTP</button>
+            </form>
+            <p class="popup-terms">By continuing, you agree to Tripzzy's <a href="termsofservice.html">Terms of Service</a> and <a href="termsofservice.html">Privacy Policy</a>.</p>
+        </div>
+    </div>
+
+
+    <script src="tripzzy.js"></script> 
+</body>
+</html>
+
